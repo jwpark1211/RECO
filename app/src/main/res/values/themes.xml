@@ -5,7 +5,7 @@
         <item name="windowActionBar">false</item>
     </style>
     <!-- Base application theme. -->
-    <style name="Theme.RECO" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.RECO" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
         <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/purple_500</item>
