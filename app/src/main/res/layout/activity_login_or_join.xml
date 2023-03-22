@@ -23,6 +23,7 @@
         android:text="RECO"
         android:textColor="@color/blue_c74"
         android:textSize="45sp"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
