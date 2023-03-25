@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FF"
+    tools:context=".JoinProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pyeongchangpeacebold"
+        android:text="Profile"
+        android:textColor="@color/blue_c74"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/Profile_imgView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom = "30sp"/>
+
+    <ImageButton
+        android:id="@+id/JoinProfileBackBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="20dp"
+        android:background="#F5F7FF"
+        android:scaleType="centerInside"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Profile_imgView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/nickname_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:id="@+id/nickname_editText"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:ems="10"
+        android:fontFamily="@font/scdream3"
+        android:gravity="center"
+        android:hint="닉네임"
+        android:textColor="#555555"
+        android:textSize="15sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/introduction_editText"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:ems="10"
+        android:fontFamily="@font/scdream3"
+        android:hint="  자기소개를 입력하세요."
+        android:textColor="#555555"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_editText" />
+
+    <Button
+        android:id="@+id/JoinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_rounded_corner_rectangle"
+        android:fontFamily="@font/pyeongchangpeacebold"
+        android:text="회원가입"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduction_editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
