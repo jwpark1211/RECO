@@ -92,12 +92,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/JoinBtn"
+        android:id="@+id/JoinNextBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_rounded_corner_rectangle"
         android:fontFamily="@font/pyeongchangpeacebold"
-        android:text="회원가입"
+        android:text="다음으로"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_marginBottom="80dp"

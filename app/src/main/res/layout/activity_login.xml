@@ -77,6 +77,29 @@
             android:inputType="textPassword"
             android:textColor="#555555"
             android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+            <CheckBox
+                android:id="@+id/keepOnLoginCheckbox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/custom_checkbox"
+                android:checked="false"/>
+            <TextView
+                android:text="로그인 상태 유지"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/scdream3"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
     </LinearLayout>
 
     <Button
@@ -88,6 +111,7 @@
         android:text="로그인"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:layout_marginTop="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +133,8 @@
             android:fontFamily="@font/scdream3"
             android:text="아이디 찾기"
             android:textColor="@color/blue_c74"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            style="@style/Hyperlink"/>
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -118,9 +143,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/scdream3"
-            android:text="비밀번호 찾기"
+            android:text="비밀번호 재설정"
             android:textColor="@color/blue_c74"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            style="@style/Hyperlink"/>
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
