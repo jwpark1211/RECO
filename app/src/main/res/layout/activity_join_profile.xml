@@ -32,12 +32,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/Profile_imgView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="?attr/selectableItemBackground"
         android:src="@drawable/profile"
+        tools:ignore="MissingConstraints"
         app:layout_constraintBottom_toTopOf="@+id/nickname_editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
